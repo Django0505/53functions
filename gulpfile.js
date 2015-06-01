@@ -4,6 +4,3 @@ gulp.task('test', function() {
 return gulp.src('./qunit.html')
 .pipe(qunit());
 });
-gulp.task('go', function(){
-console.log("oi!");
-});
