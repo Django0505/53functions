@@ -29,4 +29,9 @@ TestMyCode.run("testing sumList function", function(assert){
     assert.equals(15, result);
 
 });
+TestMyCode.run("testing stringLen function", function(assert){
+    var result = stringLen("amagwinya");
+    // is the result as we expected?
+    assert.equals(9, result);
 
+});
