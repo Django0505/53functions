@@ -75,7 +75,13 @@ QUnit.test("testing SumOfWords function", function(assert){
 QUnit.test("testing LongestWord function", function(assert){
     var value = LongestWord("Tom is here");
     // is the result as we expected?
-    assert.equal(value, "here","We expect value to be here " );
+    assert.equal(value, "here 4","We expect value to be here 4" );
+
+});
+QUnit.test("testing ShortestWord function", function(assert){
+    var value = ShortestWord("Tom is here");
+    // is the result as we expected?
+    assert.equal(value, "is 2","We expect value to be is 2" );
 
 });
 
