@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:request:20160119':
+    - gulp-qunit > phantomjs > request:
+        patched: '2018-05-24T05:46:08.868Z'
+  'npm:tough-cookie:20170905':
+    - gulp-qunit > phantomjs > request > tough-cookie:
+        patched: '2018-05-24T05:46:08.868Z'
