@@ -4,7 +4,9 @@
   "description": "\"Code Kata to enhance coding skills\"",
   "main": "hello_joe.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "dependencies": {
     "gulp": "~3.8.11",
-    "gulp-qunit": "~1.2.1"
-  }
+    "gulp-qunit": "~1.2.1",
+    "snyk": "^1.85.0"
+  },
+  "snyk": true
 }
