@@ -4,7 +4,9 @@
   "description": "\"Code Kata to enhance coding skills\"",
   "main": "hello_joe.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,9 @@
     "url": "https://github.com/Django0505/53functions/issues"
   },
   "dependencies": {
-    "gulp": "~3.8.11",
-    "gulp-qunit": "~1.2.1"
-  }
+    "gulp": "~4.0.0",
+    "gulp-qunit": "~1.2.1",
+    "snyk": "^1.104.2"
+  },
+  "snyk": true
 }
